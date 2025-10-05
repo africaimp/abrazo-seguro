@@ -64,7 +64,7 @@ public class Registro {
         registroDTO.setDiagnostico(paciente.getDiagnostico());
         registroDTO.setServicioId(paciente.getServicioId());
 
-        registroDTO.setCuidad(datosContacto.getCiudad());
+        registroDTO.setCiudad(datosContacto.getCiudad());
         registroDTO.setEmail(datosContacto.getEmail());
         registroDTO.setNombreTutor(datosContacto.getNombreTutor());
         registroDTO.setDireccion(datosContacto.getDireccion());
@@ -76,7 +76,7 @@ public class Registro {
     private DatosContacto crearDatosContacto(RegistroDTO registroDTO, Paciente paciente) {
         DatosContacto datosContacto = new DatosContacto();
         datosContacto.setPacienteId(paciente.getId());
-        datosContacto.setCiudad(registroDTO.getCuidad());
+        datosContacto.setCiudad(registroDTO.getCiudad());
         datosContacto.setDireccion(registroDTO.getDireccion());
         datosContacto.setEmail(registroDTO.getEmail());
         datosContacto.setTelefono(registroDTO.getTelefono());

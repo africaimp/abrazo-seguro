@@ -1,8 +1,6 @@
 package com.abrazoseguro.registro.dto;
 
-import java.sql.Timestamp;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class RegistroDTO {
 
@@ -18,7 +16,7 @@ public class RegistroDTO {
 
     private String nombreTutor;
 
-    private String cuidad;
+    private String ciudad;
 
     private String email;
 
@@ -74,12 +72,12 @@ public class RegistroDTO {
         this.nombreTutor = nombreTutor;
     }
 
-    public String getCuidad() {
-        return cuidad;
+    public String getCiudad() {
+        return ciudad;
     }
 
-    public void setCuidad(String cuidad) {
-        this.cuidad = cuidad;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
     public String getEmail() {
