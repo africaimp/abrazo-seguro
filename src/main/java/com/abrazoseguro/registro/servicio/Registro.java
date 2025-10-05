@@ -58,6 +58,7 @@ public class Registro {
 
     private RegistroDTO entityToDTO(Paciente paciente, DatosContacto datosContacto) {
         RegistroDTO registroDTO = new RegistroDTO();
+        registroDTO.setId(paciente.getId());
         registroDTO.setNombre(paciente.getNombre());
         registroDTO.setFechaNacimiento(paciente.getFechaNacimiento());
         registroDTO.setDiagnostico(paciente.getDiagnostico());

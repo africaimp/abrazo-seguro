@@ -5,6 +5,9 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class RegistroDTO {
+
+    private Long id;
+
     private String nombre;
 
     private LocalDate fechaNacimiento;
@@ -22,6 +25,14 @@ public class RegistroDTO {
     private String telefono;
 
     private String direccion;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;
