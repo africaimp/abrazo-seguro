@@ -7,6 +7,9 @@ WORKDIR /app
 # Copiar todo el código
 COPY . .
 
+# Dar permisos de ejecución a gradlew
+RUN chmod +x ./gradlew
+
 # Construir el JAR (sin tests para agilizar)
 RUN ./gradlew clean build -x test
 
